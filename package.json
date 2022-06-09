@@ -55,6 +55,10 @@
     "preinstall": "npx npm-force-resolutions",
     "publishToHeroku": "git push heroku main"
   },
+  "engines": {
+    "node": "16.0.0",
+    "npm": "7.10.0"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
