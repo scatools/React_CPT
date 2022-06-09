@@ -48,12 +48,16 @@
     "survey-react": "^1.9.5"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"cd ../backend && nodemon server.js\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "preinstall": "npx npm-force-resolutions",
-    "publishToHeroku": "cd ../ && git subtree push --prefix frontend heroku-frontend main || true"
+    "publishToHeroku": "git push heroku main"
+  },
+  "engines": {
+    "node": "16.0.0",
+    "npm": "7.10.0"
   },
   "eslintConfig": {
     "extends": "react-app"
